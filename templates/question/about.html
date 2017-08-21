@@ -1,0 +1,134 @@
+{% load static from staticfiles %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>关于我们</title>
+</head>
+
+<body style="background:#ddd;">
+
+<html>
+<head>
+<title>A Useful Page</title>
+</head>
+<body>
+<form action="{% url 'question:about' %}" method="post">
+	{% csrf_token %}
+	{{ form }}
+	<button class="btn btn-default fav-btn" type="submit">更新图片</button>
+</form>
+	
+</body>
+</html>
+
+<style type="text/css">
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";}
+
+.main{
+	width:1000px;
+	margin:50px auto;
+	position:relative;
+}
+.pic{
+	width:300px;
+	height:290px;
+	border:1px solid #ccc;
+	background:#fff;
+	box-shadow:2px 2px 3px #aaa;
+	
+}
+.pic img{
+	margin:10px 0 0 8px;
+	width:285px;
+}
+.pic p{
+	text-align:center;font-size:20px;
+}
+.pic1{
+	transform:rotate(7deg);
+	-ms-transform:rotate(7deg);
+	-moz-transform:rotate(7deg);
+	-o-transform:rotate(7deg);
+	-webkit-transform:rotate(7deg);
+}
+.pic2{
+	transform:rotate(-8deg);
+	-ms-transform:rotate(-8deg);
+	-moz-transform:rotate(-8deg);
+	-o-transform:rotate(-8deg);
+	-webkit-transform:rotate(-8deg);
+}
+.pic3{
+	position:absolute;
+	z-index:2;
+	top:40px;
+	left:350px;
+	transform:rotate(-35deg);
+	-ms-transform:rotate(-35deg);
+	-moz-transform:rotate(-35deg);
+	-o-transform:rotate(-35deg);
+	-webkit-transform:rotate(-35deg);
+}
+.pic4{
+	position:absolute;
+	z-index:3;
+	top:360px;
+	left:350px;
+	transform:rotate(35deg);
+	-ms-transform:rotate(35deg);
+	-moz-transform:rotate(35deg);
+	-o-transform:rotate(35deg);
+	-webkit-transform:rotate(35deg);
+}
+.pic5{
+	position:absolute;
+	z-index:4;
+	top:150px;
+	left:600px;
+	transform:rotate(60deg);
+	-ms-transform:rotate(60deg);
+	-moz-transform:rotate(60deg);
+	-o-transform:rotate(60deg);
+	-webkit-transform:rotate(60deg);
+}
+.pic6{
+	position:absolute;
+	z-index:5;
+	top:180px;
+	left:280px;
+	transform:rotate(-60deg);
+	-ms-transform:rotate(-60deg);
+	-moz-transform:rotate(-60deg);
+	-o-transform:rotate(-60deg);
+	-webkit-transform:rotate(-60deg);
+}
+</style>
+
+<div class="main">
+    <div class="pic pic1">
+        <img src="{% static "img/1.png" %}">
+    </div>
+    <div class="pic pic2">
+        <img src="{% static "img/2.png" %}">
+    </div>
+    <div class="pic pic3">
+        <img src="{% static "img/3.png" %}">
+    </div>
+    <div class="pic pic4">
+        <img src="{% static "img/4.png" %}">
+    </div>
+    <div class="pic pic5">
+        <img src="{% static "img/5.png" %}>
+    </div>
+    <div class="pic pic6">
+        <img src="{% static "img/6.png" %}">
+    </div>
+</div>
+
+<div style="text-align:center;margin:150px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+</div>
+</body>
+</html>
