@@ -94,7 +94,7 @@ AUTH_USER_MODEL = 'people.Member'
 # LANGUAGE_CODE = 'en-us'
 
 # TIME_ZONE = 'UTC'
-LANGUAGE_CODE = 'zh_Hans'
+LANGUAGE_CODE = 'zh_hans'
 TIME_ZONE='Asia/Shanghai'
 
 USE_I18N = True
