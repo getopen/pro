@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '^q-t_@fb8v(p6+r!@ar0e*0j9o-*9l%sh)@8_g%v&%lf=_es(m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
@@ -94,7 +94,7 @@ AUTH_USER_MODEL = 'people.Member'
 # LANGUAGE_CODE = 'en-us'
 
 # TIME_ZONE = 'UTC'
-LANGUAGE_CODE = 'zh_hans'
+LANGUAGE_CODE = 'zh-hans'
 TIME_ZONE='Asia/Shanghai'
 
 USE_I18N = True
