@@ -128,7 +128,7 @@ class Follower(models.Model):
         unique_together = ('user_a', 'user_b')
 
     def __str__(self):
-        return "%s following %s" % (self.user_a, self.user_b)
+        return "%s following %s" % (self.user_b, self.user_a)
 
 
 class EmailVerified(models.Model):
