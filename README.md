@@ -7,3 +7,8 @@
 > pip install qiniu
 >
 > pip install misaka==1.0.2
+
+# django admin 账号
+> super user : admin@qq.com
+>
+> password : 123456
